@@ -15,11 +15,11 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'notejam.db',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
+        'NAME': 'mysql',
+        'USER': 'root',
+        'PASSWORD': 'mysql',
+        'HOST': '34.100.138.226',
+        'PORT': '3306',
     }
 }
 
@@ -131,7 +131,7 @@ INSTALLED_APPS = (
     'pads',
     'notes',
     'users',
-    'south',
+
 )
 
 AUTHENTICATION_BACKENDS = (
